@@ -5,3 +5,8 @@ export const getAllProject = async (accessToken: string) => {
     headers: { Authorization: `Bearer ${accessToken}` },
   });
 };
+export const allClients = async (accessToken: string) => {
+  return await instance.get("/all-clients", {
+    headers: { Authorization: `Bearer ${accessToken}` },
+  });
+};
